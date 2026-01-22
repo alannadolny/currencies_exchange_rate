@@ -1,0 +1,8 @@
+{
+  "name": "Currencies exchange rate",
+  "description": "Display exchange rate for selected currency",
+  "uuid": "grubyalancio@gmail.com",
+  "shell-version": [
+    "48"
+  ]
+}
