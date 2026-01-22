@@ -34,4 +34,11 @@ export default class ApiClient {
       );
     });
   }
+
+  destroy() {
+    if (this._session) {
+      this._session.abort();
+      this._session = null;
+    }
+  }
 }

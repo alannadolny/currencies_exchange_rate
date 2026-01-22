@@ -1,8 +1,7 @@
 {
   "name": "Currencies exchange rate",
-  "description": "Display exchange rate for selected currency",
-  "uuid": "grubyalancio@gmail.com",
-  "shell-version": [
-    "48"
-  ]
+  "description": "Display exchange rate for selected currency. This extension uses hexarate.paikama.co services for getting exchange rate data.",
+  "url": "https://github.com/alannadolny/currencies_exchange_rate",
+  "uuid": "currencies-exchange-rate@alannadolny",
+  "shell-version": ["48"]
 }

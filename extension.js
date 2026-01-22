@@ -95,7 +95,6 @@ const ExchangeRate = GObject.registerClass(
         .catch((e) => {
           this._rateLabel.set_text("Error");
           this._item.label.set_text("Error fetching rate");
-          log("Error fetching exchange rate: " + e.toString());
         });
     }
 
@@ -168,6 +167,14 @@ const ExchangeRate = GObject.registerClass(
       this.targetCurrency = currency;
       this._showLoading();
       this._loadData();
+    }
+
+    destroy() {
+      if (this._api) {
+        this._api.destroy();
+      }
+
+      super.destroy();
     }
   }
 );
